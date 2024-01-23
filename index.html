@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #1c1c1c;
+            color: #f1f1f1;
+        }
+        section{
+            margin-bottom: 0;
+        }
+        .full-screen {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .background-img {
+            background-image: url('./assets/images/Portfolio.png');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+        }
+        #div3, #div31{
+            height: auto;
+        }
+        .section-div {
+            display: flex;
+            height: 100vh;
+            align-items: stretch;
+        }
+        .text-section, .image-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .image-section-book{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-size: contain;
+            background-position: center;
+        }
+        .image-section {
+            background-size: cover;
+            background-position: center;
+        }
+        .button-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .button-row button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+        }
+        .container {
+            padding: 0;
+            margin: 0;
+        }
+        /* Scrolling element */
+        .scrolling-element {
+            position: absolute;
+            top: 0;
+            right: 50px;
+            width: 50px;
+            height: 50px;
+            background-image: url("./assets/images/Mezelf.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            transition: top 0.3s ease;
+        }
+        .container-fluid{
+            padding-top: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="scrolling-element"></div> <!-- Scrolling element -->
+<nav class="container-fluid">
+    <ul>
+        <li><strong>Portfolio</strong></li>
+    </ul>
+    <ul>
+        <li><a href="#div1">Home</a></li>
+        <li><a href="#div2">Waarom deze richting?</a></li>
+        <li><a href="#div3">Nachtkastboekje</a></li>
+        <li><a href="#div4">Terugblik</a></li>
+    </ul>
+</nav>
+<main class="container-fluid">
+    <div id="div1" class="full-screen background-img">
+        <div class="button-row">
+            <button onclick="document.location='#div2'">Waarom deze richting?</button>
+            <button onclick="document.location='#div3'">Nachtkastboekje</button>
+            <button onclick="document.location='#div4'">Terugblik</button>
+        </div>
+    </div>
+    <div id="div2" class="section-div">
+        <section class="image-section" style="background-image: url('./assets/images/waarom.png');"></section>
+        <section class="text-section">
+            <div>
+                <h4>Waarom heb je voor deze richting gekozen; Waar stond je een half jaar geleden en wat wilde je bereiken (doelstelling)?</h4>
+                <p>Ik heb deze richting gekozen omdat ik het gedeelte ondernemen heel interessant vind. Zelf ben ik ondernemend ingesteld en wil daar meer over te weten komen voor in de toekomst. Is het beeld wat ik voor ogen heb ook het daadwerkelijke beeld, of mis ik nog een heel stuk aan key onderdelen.</p>
+                <p>Een half jaar geleden wist ik wel al wat van het ondernemers leven. Maar door de lessen van Specialise me heb ik verschillende nieuwe dingen geleerd. Roel heeft heel veel waardevolle dingen uitgelegd die ik niet voor ogen had gezien zonder zijn uitleg.</p>
+                <p>Wat ik wilde bereiken is dat ik mijn idee van ondermenen vergelijk met wat het daadwerkelijk is, en als er harde feiten worden laten zien dat ik die ook waarneem om daar in de toekomst mijn voordeel aan te voldoen.</p>
+            </div>
+        </section>
+    </div>
+    <div id="div3" class="section-div">
+        <section class="text-section">
+            <div>
+                <h4>Welk nachtkastboek heb je gelezen; Geef een korte beschrijving van de inhoud van het boek; Waarom heb je voor dit boek gekozen; </h4>
+                <p>Ik heb het boek "Zero to one, creëer de toekomst" van Pether Thiel gelezen </p>
+                <p>Zero to one is een boek geschreven door Peter Thiel, Peter Thiel is de oprichter van PayPal en investeerder in Facebook. In dit boek beschrijft Peter hoe dit allemaal tot stand gekomen is en wat zijn inzichten waren. In dit boek komt vooral naar voren dat Peter het belangrijk vindt dat je een baanbrekend product op de markt brengt in plaats van het jatten van ideeën van andere om het beter te maken.</p>
+                <p>Wat Peter heel duidelijk maakt in het boek is dat die kiest voor een markt dat je uniek bent en niet dat je gaat graaien in een overvolle markt waar al veel producten voor bestaan. In dit boek beschrijft Peter onderdelen zoals het begrijpen van de kracht van technologie en dat daar een hele sterke markt positie aan overblijft. Het doel van dit boek is om ondernemers en investeerders motiveert om de mogelijkheden te verkennen.</p>
+                <p>Waarom ik voor dit boek gekozen heb, is omdat ik begon met een ander boek genaamd "Drive" van Daniel Pink, maar na de eerste 30 pagina's kwam ik niet lekker in het boek en ben dus verder gaan zoeken. Zelf kende ik de naam Peter Thiel al en vind zijn levensproces altijd al interessant omdat ik zelf ook altijd bezig ben met bedenken van producten die de markt kunnen breken daarom de keuze.</p>
+            </div>
+        </section>
+        <section class="image-section-book" style="background-image: url('./assets/images/book.jpeg');"></section>
+    </div>
+    <div id="div31" class="1 section-div">
+        <section class="image-section-book" style="background-image: url('./assets/images/book.jpeg');"></section>
+        <section class="text-section">
+            <div>
+                <h4>Aan welke
+                    informatie uit het boek heb je veel gehad; Wat zou je achteraf gezien naar aanleiding van het boek anders doen; Heb je naast het
+                    nachtkastboek nog andere aanvullende inspiratie opgedaan m.b.t. je eigen signatuur</h4>
+                <p>Peter verteld in dit boek ook over de opkomst van Paypal en dat het aan het begin moeizaam ging, en daarom heeft gekozen voor een marketing strategie wat inhield om mensen geld cadeau te geven om op het platform van Paypal te komen. Daar heeft die mij aan het denken gezet dat als je een product bouwt dat het in het begin moeizaam kan gaan en dat het niet direct aan het product hoeft te liggen maar juist aan de naamsbekendheid. Ik vond dat wel een waardevolle les.</p>
+                <p>Ik denk dat ik naar aanleiding van dit boek in de TLE sprint niet zo snel iets anders zou doen, maar als ik het betrek in mijn eigen leven dan heeft dit boek me wel geleerd dat er al veel producten bestaan, maar je echt niet wat moet gaan bouwen wat andere al een keer hebben uitgeplozen, maar dat je echt zelf wat moet bedenken wat andere nog niet gedaan hebben. Daarbij is het ook interessant om te investeren in producten die iemand aan het maken is waar je bij denkt dat het echt baanbrekend zou kunnen worden.</p>
+                <p>Ik denk zelf dat ik naast het nachtkastboek een eigen signatuur heb ontwikkeld, dat er meer in het leven is dan alleen maar werken en op die manier je geld te verdienen. Zelf geloof ik veel in het gedeelte (software) producten maken en om daarmee een passief inkomen te creëren.</p>
+            </div>
+        </section>
+    </div>
+    <div id="div4" class="section-div">
+        <section class="text-section">
+            <div>
+                <h4>Hoe kijk je terug op het afgelopen halfjaar; Wat weet je inmiddels over het vakgebied; Hoe ben je in dit vakgebied gegroeid;</h4>
+                <p>Ik kijk positief terug op het afgelopen half jaar, vind het leuk om ook daadwerkelijk een op maat gemaakt product te maken voor een opdrachtgever en daarmee ook contact te hebben met de opdrachtgever. Op deze manier een oplossing te bedenken voor een probleem waar zij tegenaan liepen.</p>
+                <p>Wat ik inmiddels weet over dit vakgebied is dat het heel uitgebreid is. Het is niet alleen maar coderen, maar er zit veel meer achter dan alleen dat gedeelte. Ook dat wekt mijn interesse ten zeerste omdat coderen anzich saai is vergeleken met het gehele pakket.</p>
+                <p>Ik denk dat ik in die vakgebied ben gegroeid met de richting van het leiden van een groep, aan het begin werdt ik gekozen tot groepsleider en kreeg dus een best grote verantwoordelijkheid. Dus ook presentaties etc moest ikk geven, en ik denk dat ik daarin ben gegroeid omdat ik dat voorheen altijd spannend vond maar nu juist leuk begin te vinden.</p>
+            </div>
+        </section>
+        <section class="image-section" style="background-image: url('./assets/images/terugblik.png');"></section>
+    </div>
+    <div id="div41" class="section-div">
+        <section class="image-section" style="background-image: url('./assets/images/terugblik.png');"></section>
+        <section class="text-section">
+            <div>
+                <h4>Wat onderscheidt
+                    jou van andere Ondernemende Technologen; Welke aanbevelingen geef je je toekomstige zelf mee; Wat is jouw visie op het vervolg van je
+                    studie i.r.t. deze richting</h4>
+                <p>Wat onderscheidt mij van de andere ondernemende technologen, ik denk dat ik mezelf onderscheidt aan de andere omdat ik vanuit mijn ouders al mee gekregen heb dat ik best een grote mond mag hebben maar dat het wel gebasseerd moet zijn op feiten. Dus ik ben niet snel van mijn stuk te brengen mits er met feiten worden gesproken.</p>
+                <p>Wat ik mezelf mee wil geven voor in de toekomst: Blijf altijd op het rechte pad lopen maar denk niet in problemen maar juist in oplossingen</p>
+                <p>ik denk dat mijn visie i.r.t. deze richting voor de rest van de studie is dat ik dingen durf op te pakken en durf te vragen i.p.v. me mond te houden en uiteindelijk het verkeerde te doen.</p>
+            </div>
+        </section>
+    </div>
+</main>
+<footer class="container">
+    <small><a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a></small>
+</footer>
+</body>
+</html>
+<script>
+    window.onscroll = function() {
+        var y = window.scrollY;
+        document.querySelector('.scrolling-element').style.top = y + 'px';
+    };
+</script>
